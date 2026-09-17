@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         權限宣告：一個都沒有。
+
+         輕量版不宣告任何權限，包括 INTERNET —— 啟動器在系統層面即無法
+         建立任何對外連線。這是「純本機」最強的保證：不必仰賴程式碼自律，
+         任何人都能從 Manifest 一眼驗證。
+
+         首頁狀態列的 Wi-Fi／網路／藍牙三顆圖示不需要權限：它們只是用
+         Intent 開啟系統對應的設定頁，並不讀取連線狀態；藍牙硬體的有無
+         改以 PackageManager.hasSystemFeature 判斷，同樣免權限。
+
+         附帶好處：拿掉 ACCESS_WIFI_STATE 之後，建置系統就不會再隱含
+         加上 <uses-feature android:name="android.hardware.wifi"
+         android:required="true" />，只有乙太網路的老電視盒才不會在
+         商店端被過濾掉。
+         ═══════════════════════════════════════════════════════════════ -->
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         套件可見度（取代 QUERY_ALL_PACKAGES）
+
+         啟動器需要列出可啟動的應用程式，以顯示「所有應用程式」頁面。
+         Android 11（API 30）起套件清單預設隔離；原本以 QUERY_ALL_PACKAGES
+         取得全域可見度，但該權限屬敏感等級，上架時需額外聲明用途。
+         改用 <queries> 只索取「具備啟動器進入點的應用程式」，範圍最小、
+         行為完全相同；API 30 以下的裝置會自動忽略此區塊。
+         ═══════════════════════════════════════════════════════════════ -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+        </intent>
+    </queries>
+
+    <!-- 電視盒與一般觸控裝置皆可安裝：三項硬體特徵都設為非必要。
+         screen.landscape 若不明寫，會因為 Activity 鎖定橫向而被隱含
+         標成必要，平白多一道裝置過濾。 -->
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="false" />
+
+    <application
+        android:name=".FlintApp"
+        android:allowBackup="false"
+        android:banner="@drawable/ic_banner"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FlintTV">
+
+        <!-- 啟動器主畫面。
+             註冊為 HOME 之後，系統會在開機完成時自動拉起本 Activity，
+             因此輕量版不需要 BOOT_COMPLETED 廣播接收器，也不需要任何常駐服務。 -->
+        <activity
+            android:name=".ui.home.LauncherActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>

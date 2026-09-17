@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  台灣繁體（基準語系）。輕量版只保留兩個語系：values（台灣繁體）與 values-en。
+  系統設為其他中文變體的裝置一律回落到這一份。
+
+  用字規範：預設、遠端、目前、裝置、新增、選單、螢幕、設定、執行、載入、解除安裝。
+  省略號一律用全形 …，不要用半形三點。
+-->
+<resources>
+    <string name="app_name">火石啟動器</string>
+
+    <!-- 首頁四張卡片 -->
+    <string name="watch_tv">看電視</string>
+    <string name="watch_shows">追劇</string>
+    <string name="favorites">我的收藏</string>
+    <string name="all_apps">全部應用</string>
+
+    <!-- 設定頁 -->
+    <string name="settings">設定</string>
+    <string name="language">語言</string>
+    <string name="about">關於火石啟動器</string>
+    <string name="set_default_launcher">設為預設桌面</string>
+    <string name="default_launcher_set">✓ 已是預設桌面</string>
+    <string name="default_launcher_not_set">未設定</string>
+
+    <!-- 佈景主題 -->
+    <string name="theme_style">主題風格</string>
+    <string name="theme_current">目前使用</string>
+    <string name="theme_restore_default">還原預設</string>
+    <string name="theme_apple_tv">Apple TV 風格</string>
+    <!-- 台灣「酒店」指涉聲色場所，hotel 的對應詞是飯店 -->
+    <string name="theme_luxury_hotel">豪華飯店</string>
+    <string name="theme_ink_wash">水墨</string>
+    <string name="theme_cinema">電影院</string>
+
+    <!-- 首頁卡片綁定應用程式 -->
+    <string name="bind_tv_label">看電視綁定</string>
+    <string name="bind_shows_label">追劇綁定</string>
+    <string name="bind_not_set">未設定</string>
+    <string name="bind_select_app">為「%s」選擇應用</string>
+    <string name="bind_done">已綁定 %s</string>
+    <string name="bind_app_removed">應用已移除，請重新綁定</string>
+    <string name="bind_no_apps">找不到可用的應用</string>
+
+    <!-- 全部應用 / 我的收藏 -->
+    <string name="loading_apps">載入中…</string>
+    <string name="no_favorites">還沒有收藏</string>
+    <!-- 實測電視遙控器長按 OK 無法可靠觸發，二級操作一律走選單鍵 -->
+    <string name="no_favorites_hint">按選單鍵可加入收藏</string>
+    <string name="long_press_tip">按選單鍵可加入或取消收藏</string>
+    <string name="favorite_add">★ 收藏</string>
+    <string name="favorite_remove">取消收藏</string>
+    <string name="uninstall">解除安裝</string>
+    <string name="uninstall_unavailable">這台裝置無法解除安裝應用</string>
+</resources>

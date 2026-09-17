@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Flint Launcher</string>
+
+    <!-- Home cards -->
+    <string name="watch_tv">Watch TV</string>
+    <string name="watch_shows">Shows</string>
+    <string name="favorites">Favorites</string>
+    <string name="all_apps">All Apps</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="language">Language</string>
+    <string name="about">About Flint Launcher</string>
+    <string name="set_default_launcher">Set as Default Launcher</string>
+    <string name="default_launcher_set">✓ Default</string>
+    <string name="default_launcher_not_set">Not set</string>
+
+    <!-- Themes -->
+    <string name="theme_style">Theme Style</string>
+    <string name="theme_current">Current</string>
+    <string name="theme_restore_default">Restore Default</string>
+    <string name="theme_apple_tv">Apple TV Style</string>
+    <string name="theme_luxury_hotel">Luxury Hotel</string>
+    <string name="theme_ink_wash">Ink Wash</string>
+    <string name="theme_cinema">Cinema</string>
+
+    <!-- App binding -->
+    <string name="bind_tv_label">"Watch TV" app</string>
+    <string name="bind_shows_label">"Shows" app</string>
+    <string name="bind_not_set">Not set</string>
+    <string name="bind_select_app">Choose app for "%s"</string>
+    <string name="bind_done">Bound to %s</string>
+    <string name="bind_app_removed">App removed, please rebind</string>
+    <string name="bind_no_apps">No apps found</string>
+
+    <!-- All apps / Favorites -->
+    <string name="loading_apps">Loading…</string>
+    <string name="no_favorites">No favorites yet</string>
+    <string name="no_favorites_hint">Press Menu to add an app here</string>
+    <string name="long_press_tip">Press Menu to add or remove favorites</string>
+    <string name="favorite_add">★ Favorite</string>
+    <string name="favorite_remove">Remove favorite</string>
+    <string name="uninstall">Uninstall</string>
+    <string name="uninstall_unavailable">This device cannot uninstall apps</string>
+</resources>

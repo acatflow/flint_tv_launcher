@@ -1,0 +1,92 @@
+# ──────────────────────────────────────────────
+#  機密 / 憑證 —— 最優先，絕不進版
+# ──────────────────────────────────────────────
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+*.cer
+*.crt
+keystore.properties
+signing.properties
+google-services.json
+service-account*.json
+
+# 環境變數與密文
+.env
+.env.*
+!.env.example
+*.secret
+secrets.properties
+credentials.properties
+
+# ──────────────────────────────────────────────
+#  本機設定（含你電腦上的 SDK 絕對路徑）
+# ──────────────────────────────────────────────
+local.properties
+*.local
+
+# ──────────────────────────────────────────────
+#  Gradle / 建置產物
+# ──────────────────────────────────────────────
+.gradle/
+build/
+captures/
+.cxx/
+.kotlin/
+*.apk
+*.aab
+*.ap_
+*.aar
+*.dex
+*.class
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+output.json
+release/
+
+# ──────────────────────────────────────────────
+#  IDE（Android Studio / IntelliJ）
+# ──────────────────────────────────────────────
+.idea/
+*.iml
+*.ipr
+*.iws
+.navigation/
+.externalNativeBuild/
+
+# VS Code
+.vscode/
+
+# ──────────────────────────────────────────────
+#  作業系統雜物
+# ──────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+desktop.ini
+
+# ──────────────────────────────────────────────
+#  日誌 / 暫存 / 偵錯輸出
+# ──────────────────────────────────────────────
+*.log
+*.hprof
+*.tmp
+*.bak
+*.swp
+*~
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# ──────────────────────────────────────────────
+#  測試 / 擷圖 / 錄影等本機產物
+# ──────────────────────────────────────────────
+screenshots/
+*.png.bak
+/out/
