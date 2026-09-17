@@ -1,4 +1,7 @@
-# 📺 火石 TV 遠端遙控啟動器 —— 免越獄 / 免 Root，手機跨網控制電視，幫長輩打字搜劇！
+# 📺 火石 TV 遠端遙控啟動器
+> **免越獄 / 免 Root 🌟 手機瀏覽器打開即用，輕鬆跨網路遠端控制電視，隨時幫家中的長輩打字搜劇！**
+> 
+> ✨ 如果這個專案對你有幫助，請幫阿正點點 Star，這對我是極大的鼓勵！
 
 [![Platform](https://img.shields.io/badge/Platform-Android%206.0%2B-3DDC84?logo=android&logoColor=white)](https://www.android.com)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
@@ -6,8 +9,6 @@
 本項目核心將手機與電視跨網連動，完美適配 **安博盒子 (Unblock Tech)**、**小雲盒子 (Svicloud)**、**易播盒子 (EVPAD)**、**愛米盒子 (Imeety Box)** 等 Android 6.0+ 老舊電視盒子。
 
 全系列開箱即用，免越獄、不需 Root 權限。本項目完全開源透明，全鏈路多級 SSL 安全加密，絕無任何商業廣告、無背景暗刷流量行為，提供最堅實的安全信任背書。
-> ✨ 如果這個專案對你有幫助，請幫阿正點點 Star，這對我是極大的鼓勵！
-
 
 <!-- 🌟 頂部核心功能高光循環 GIF 演示區 🌟 -->
 ![火石TV核心功能循環演示](docs/assets/main_showcase.gif)
