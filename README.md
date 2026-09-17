@@ -1,6 +1,5 @@
 # 📺 火石 TV 遠端遙控啟動器
-> **免越獄 / 免 Root 🌟 手機瀏覽器打開即用，輕鬆跨網路遠端控制電視，隨時幫家中的長輩打字搜劇！**
-> 
+### 📱 手機瀏覽器打開即用｜免越獄・免 Root｜跨網遠端控制，幫長輩打字搜劇！
 > ✨ 如果這個專案對你有幫助，請幫阿正點點 Star，這對我是極大的鼓勵！
 
 [![Platform](https://img.shields.io/badge/Platform-Android%206.0%2B-3DDC84?logo=android&logoColor=white)](https://www.android.com)
