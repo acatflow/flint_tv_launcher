@@ -2,6 +2,9 @@
 ### 📱 手機瀏覽器打開即用｜免越獄・免 Root｜跨網遠端控制，幫長輩打字搜劇！
 > ✨ 如果這個專案對你有幫助，請幫阿正點點 Star，這對我是極大的鼓勵！
 
+👉 [📖 點此前往詳細圖文教學（Notion 外部連結）](https://51999.uk)
+
+
 [![Platform](https://img.shields.io/badge/Platform-Android%206.0%2B-3DDC84?logo=android&logoColor=white)](https://www.android.com)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
